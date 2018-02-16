@@ -158,26 +158,8 @@ def open_tones():
         pass
 def Alarm_M():
     def call_Alarm_M():
-        global Alarm_1
-        global Alarm_2
-        global Alarm_3
-        global Alarm_4
-        global Alarm_5
-        global Alarm_6
-        global Alarm_7
-        global Alarm_8
-        global Alarm_9
-        global Alarm_10
-        global m_1
-        global m_2
-        global m_3
-        global m_4
-        global m_5
-        global m_6
-        global m_7
-        global m_8
-        global m_9
-        global m_10
+        global Alarm_1, Alarm_2, Alarm_3, Alarm_4, Alarm_5, Alarm_6, Alarm_7, Alarm_8, Alarm_9, Alarm_10
+        global m_1, m_2, m_3, m_4, m_5, m_6, m_7, m_8, m_9, m_10
         global count_a
         with open('Alarm_count.plk', 'wb')as z9:
             dill.dump(count_a, z9)
@@ -1246,30 +1228,8 @@ def weather():
     done.place( x = 340, y =295)
 
 def Load_todo():
-    global Todo_Al_1
-    global Todo_M1
-    global Todo_Al_2
-    global Todo_M2
-    global Todo_Al_3
-    global Todo_M3
-    global Todo_Al_4
-    global Todo_M4
-    global Todo_Al_5
-    global Todo_M5
-    global Todo_Al_6
-    global Todo_M6
-    global Todo_Al_7
-    global Todo_M7
-    global Todo_Al_8
-    global Todo_M8
-    global Todo_Al_9
-    global Todo_M9
-    global Todo_Al_10
-    global Todo_M10
-    global Todo_Al_11
-    global Todo_M11
-    global Todo_Al_12
-    global Todo_M12
+    global Todo_Al_1, Todo_M1, Todo_Al_2, Todo_M2, Todo_Al_3, Todo_M3, Todo_Al_4, Todo_M4, Todo_Al_5, Todo_M5,Todo_Al_6, Todo_M6
+    global Todo_Al_7, Todo_M7, Todo_Al_8, Todo_M8, Todo_Al_9, Todo_M9, Todo_Al_10, Todo_M10, Todo_Al_11, Todo_M11, Todo_Al_12, Todo_M12
     with open('Alarm_todo_time.plk', 'rb') as tt:
         try:
             Todo_Al_1 = dill.load(tt)
